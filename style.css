@@ -1,0 +1,188 @@
+div{
+    background-color: yellowgreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+.solid{
+    border: 10px solid red;
+    outline: 10px solid blue;
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+
+    width: 300px;
+    height: 100px;
+
+    min-width: 250px;
+    min-height: 75px;
+
+    max-width: 350px;
+    max-height: 125px;
+}
+
+.dashed{
+    border: 10px dashed red;
+    outline-style: dotted;
+    outline-width: 10px;
+    outline-color: blue;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+
+.dashed, .dotted, .ana-div, .evebeyn {
+    background-color: aqua;
+}
+
+.ilk-cocuk, .ortanca-cocuk, .buyuk-cocuk{
+    display: inline;
+    background-color: wheat;
+
+}
+
+.ilk-cocuk1, .ortanca-cocuk1, .buyuk-cocuk1{
+    display: inline-block;
+    background-color: wheat;
+    width: 100px;
+    vertical-align: top;
+
+}
+
+.ilk-cocuk11, .ortanca-cocuk11, .buyuk-cocuk11{
+    display: inline-table;
+    background-color: wheat;
+    width: 100px;
+}
+
+.buyuk-cocuk11{
+    display: block;
+}
+
+.ana-div .ozel-div{
+    background-color: goldenrod;
+}
+
+
+.dotted{
+    border: 10px dotted red;
+
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+  
+}
+
+.double{
+    border: 10px double red;
+    visibility: hidden;
+}
+
+.groove{
+    border: 10px groove red;
+    display: none;
+}
+
+.ridge{
+    border: 10px ridge red;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: blueviolet;
+    z-index: 10;
+}
+
+.inset{
+    border: 10px inset blue;
+    position: absolute;
+    background-color: blueviolet;
+    width: 400px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.outset{
+    border: 10px outset red;
+    position: relative;
+    left: -100px;
+}
+
+.tek-sinir{
+    border-width: 10px;
+    border-color: red;
+    border-style: solid;
+}
+
+.cok-sinir{
+    border-top-width: 10px;
+    border-top-color: blue;
+    border-top-style: solid;
+
+    border-right-width: 10px;
+    border-right-color: red;
+    border-right-style: dotted;
+
+    border-bottom-width: 10px;
+    border-bottom-color: brown;
+    border-bottom-style: dashed;
+
+}
+
+.tek-sinir-ozellik{
+    border-top: 10px solid blue;
+}
+
+.cocuk{
+    background-color: wheat;
+    float: right;
+}
+
+.kiz{
+    clear: both;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+@media all {
+    body{
+        font-size: 15px;
+        color: red;
+    }
+    
+    div{
+        background-color: antiquewhite;
+        color: sienna;
+    }
+}
+
+@media screen {
+    body{
+        background: thistle;
+    }
+}
+
+@media print {
+    body{
+        background-color: yellowgreen;
+    }
+}
+
+@media screen, print {
+    div{
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    div{
+        color: red;
+    }
+}
